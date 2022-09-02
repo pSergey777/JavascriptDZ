@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Homework</title>
+</head>
+
+<body>
+  <!--
+Обязательное задание.
+
+Необходимо данное задание выполнить в es5 стиле и в es6 стиле.
+Необходимо создать функцию-конструктор/класс для продукта.
+Названия: `ProductES5` для es5 стиля, `ProductES6` для es6 стиля.
+При создании объекта от функции-конструктора/класса необходимо передавать имя
+и цену товара, эта информация должна быть сохранена в объекте.
+Также у объекта должна быть возможность выполнить метод `make25Discount`, данный
+метод должен уменьшать стоимость продукта на 25%.
+Необходимо продемонстрировать работу с объектом (в свободной форме).
+-->/
+  <script>
+    "use strict";
+
+    function ProductES5(name, model, price) {
+      this.name = name;
+      this.model = model;
+      this.price = price;
+    }
+
+    const guitar1 = new ProductES5(`Gibson`, `SG`, 200000);
+    console.log(`Гитара: ${guitar1.name} ${guitar1.model} 
+      цена: ${guitar1.price} рублей`);
+
+    ProductES5.prototype.make25Discount = function () {
+      this.price *= 0.75;
+    }
+    guitar1.make25Discount();
+    console.log(`Гитара: ${guitar1.name} ${guitar1.model} 
+    цена со скидкой: ${guitar1.price} рублей`);
+
+    // ----------------------------------------------------------------------------
+
+    class ProductES6 {
+      constructor(name, model, price) {
+        this.name = name;
+        this.model = model;
+        this.price = price;
+      }
+    }
+
+    const guitar2 = new ProductES6(`Fender`, `Stratocaster`, 150000);
+    console.log(`Гитара: ${guitar2.name} ${guitar2.model} 
+    цена: ${guitar2.price} рублей`);
+
+    ProductES6.prototype.make25Discount = function () {
+      this.price *= 0.75;
+    }
+    guitar2.make25Discount();
+    console.log(`Гитара: ${guitar2.name} ${guitar2.model} 
+    цена со скидкой: ${guitar2.price} рублей`);
+
+  </script>
+</body>
+
+</html>
