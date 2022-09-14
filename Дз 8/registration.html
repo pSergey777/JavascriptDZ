@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop registration</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/6bb95cc91c.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <div class="header">
+            <nav>
+                <div class="menu">
+                    <div class="menu_button container">
+                        <div class="menu_button__left">
+                            <a class="logo_home_menu" href="index.html"><img src="images/main.logo.svg" alt="main menu"></a>
+                            <a class="logo_search" href="#"><img src="images/search.svg" alt="search"></a>
+                        </div>
+                        <div class="menu_button__right">
+                            <ul class="logo_menu">
+                                <li><a class="logo_submenu" href="#"> <img src="images/menu.svg" alt="menu"></a></li>
+                                <div class="submenu">
+                                    <div class="submenu_top">
+                                        <h3 class="submenu_header">MENU</h3>
+                                        <a class="close" href="registration.html"><img src="images/close.svg" alt="button_close"></a>
+                                    </div>
+                                    <div class="submenu_block">
+                                        <h3 class="submenu_gender">MAN</h3>
+                                        <a class="submenu_link submenu_link__Accessories" href="#">Accessories</a>
+                                        <a class="submenu_link" href="#">Bags</a>
+                                        <a class="submenu_link" href="#">Denim</a>
+                                        <a class="submenu_link" href="#">T-Shirts</a>
+                                    </div>
+                                    <div class="submenu_block">
+                                        <h3 class="submenu_gender">WOMAN</h3>
+                                        <a class="submenu_link submenu_link__Accessories" href="#">Accessories</a>
+                                        <a class="submenu_link" href="#">Jackets & Coats</a>
+                                        <a class="submenu_link" href="#">Polos</a>
+                                        <a class="submenu_link" href="#">T-Shirts</a>
+                                        <a class="submenu_link submenu_link__down" href="#">Shirts</a>
+                                    </div>
+                                    <div class="submenu_block">
+                                        <h3 class="submenu_gender">KIDS</h3>
+                                        <a class="submenu_link submenu_link__Accessories" href="#">Accessories</a>
+                                        <a class="submenu_link" href="#">Jackets & Coats</a>
+                                        <a class="submenu_link" href="#">Polos</a>
+                                        <a class="submenu_link" href="#">T-Shirts</a>
+                                        <a class="submenu_link submenu_link__down" href="#">Shirts</a>
+                                        <a class="submenu_link submenu_link__down" href="#">Bags</a>
+                                    </div>
+                                </div>
+                            </ul>
+                            <a class="logo_account" href="registration.html"><img src="images/lk.svg" alt="account"></a>
+                            <a class="logo_basket" href="shopping_cart.html"><img src="images/basket.svg" alt="basket"></a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>    
+    <div class="body__wrapper">
+        <main>
+            <div class="registration_heading">
+                <h1 class="registration_heading__text container">REGISTRATION</h1>
+            </div>
+        </main>
+    <div class="registration_form container">
+        <form action="#" class="registration_input">      
+                <p class="registration_input__heading">Your Name</p>
+                <input class="registration_input__firstName" type="text" id="name" placeholder="First Name">
+                <input class="registration_input__lastName" type="text" id="surname" placeholder="Last Name">
+                <div class="registration_gender">
+                    <input type="radio" name="gender" value="male"><span class="registration_gender__male">Male</span><br>
+                    <input type="radio" name="gender" value="male"><span class="registration_gender__male">Female</span><br>
+                    <input type="radio" name="gender" value="male"><span class="registration_gender__male">Other</span><br>
+                </div>
+            <p class="registration_input__heading">Login details</p>
+            <input class="registration_input__firstName" type="email" id="email" placeholder="Еmail">
+            <input class="registration_input__lastName" type="password" placeholder="Password">  
+            <p class="registration_input_info">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
+            <a class="button_registration" href="">
+                <p class="button_registration__text">JOIN NOW</p>
+                <img class="button_registration__right" src="images/registration/Group.svg" alt="right">
+            </a> 
+        </form>
+        <article class="registration_info">
+                <h2 class="registration_info__header">LOYALTY HAS ITS PERKS</h2>
+                <h3 class="registration_info__miniheader">Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</h3>
+                <ul class="registration_info__list">
+                    <li><span class="registration_info__list_text">15% off welcome offer</span></li>
+                    <li><span class="registration_info__list_text">Free shipping, returns and exchanges on all <span class="registration_info__list_text_orders">orders</span></li>
+                    <li><span class="registration_info__list_text">$10 off a purchase on your birthday</li>
+                    <li><span class="registration_info__list_text">Early access to products</li>
+                    <li><span class="registration_info__list_text">Exclusive offers & rewards</li>
+                </ul>
+        </article>
+    </div>
+    </div>
+    <footer>
+
+        <div class="middle_info">
+            <div class="communication container">
+                <figure class="smile">
+                        <img class="smile_photo" src="images/footer/Intersect.png" alt="smile">
+                        <div class="text_vestibulum">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar
+                            purus condimentum“</div>
+                </figure>
+                <form action="#" class="email">
+                        <p class="email_text"><span class="text_suscribe">SUBSCRIBE</span><br><span
+                                class="text_PROMOTION">FOR OUR NEWLETTER AND PROMOTION</span></p>
+                        <div class="email_form">
+                            <input type="emai" class="email_form__input" placeholder="Enter Your Email">
+                            <a href="#" class="email_form__button">Subscribe</a>
+                        </div>
+                </form>
+            </div>
+        </div>
+        <div class="bottom_info">
+            <div class="footer_bottom_info container">
+                <div class="copy">
+                    <p>© 2021 Brand All Rights Reserved.</p>
+                </div>
+                <nav>
+                    <div class="logos">
+                        <a href="#"><i class="fa fa-brands fa-facebook-f logo"></i></a>
+                        <a href="#"><i class="fa fa-brands fa-instagram logo"></i></a>
+                        <a href="#"><i class="fa fa-brands fa-pinterest logo"></i></a>
+                        <a href="#"><i class="fa fa-brands fa-twitter logo"></i></a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+</footer>
+</div>
+</body>
+</html>
